@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 '''
 На вход программе подается строка текста. Напишите программу, которая проверяет, что строка заканчивается подстрокой .com или .ru.
 Формат входных данных 
@@ -7,7 +8,9 @@
 '''
 
 s = input() 
-if '.' in s[-3] and 'r' in s[-2] or '.' in s[-4] and 'c' in s[-3]:
+#if '.' in s[-3] and 'r' in s[-2] or '.' in s[-4] and 'c' in s[-3]:
+if s.endswith('.ru') or s.endswith('.com'):
+#if s[-3:] == ".ru" or s[-4:] == '.com':
     print('YES')
 else :
     print('NO')

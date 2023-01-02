@@ -7,4 +7,8 @@
 '''
 
 s = input()
-print(len(s.translate({ord(i): None for i in 'ZYXWVUTSRQPONMLKJIHGFEDCBA1234567890'})))
+count = 0
+for i in s:
+    if i != i.upper():
+        count += 1
+print(count)

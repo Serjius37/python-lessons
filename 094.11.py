@@ -7,10 +7,10 @@
 '''
 
 s = input() 
-count = cout1 = 0 
+count = 0 
 
-for v in range(len(s)):
-    for i in range(10):
-        if str(i)  in s[v]:
-            count += 1
+for i in s:
+    if i.isdigit():
+        count += 1
+
 print(count)

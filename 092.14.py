@@ -8,8 +8,5 @@
 '''
 
 s = input()
-a = len(s) // 2
-if len(s) % 2 == 0:
-    print(s[a:], s[:a], sep = "")
-else:
-    print(s[a + 1:], s[:a + 1], sep = "")
+a = len(s) // 2  + (len(s) % 2)
+print(s[a:] + s[:a])
