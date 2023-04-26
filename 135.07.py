@@ -8,13 +8,9 @@
 
 # объявление функции
 def is_palindrome(text):
-    text = text.replace(' ', '').replace(',', '').replace('.', '').replace('!', '').replace('!', '').replace('-', '').replace('?', '')
-    text = text.lower()
-    if text in text[::-1]:
-        return True
-    else:
-        return False
-        
+    text = [i.lower() for i in text if i.isalpha()]
+    return text == text[::-1]
+      
 # считываем данные
 txt = input()
 

@@ -15,17 +15,17 @@
 def is_password_good(password):
     a = 0
     if len(password) >= 8:
-        if password not in password.upper():
-            if password not in password.lower():
-                for i in password:
-                    if i.isdigit():
-                        a = 1
-                        break
-                if a == 1:
-                    return True
-    if a == 0:
-        return False
-                       
+        a += 1
+    if password not in password.upper():
+        a += 1
+    if password not in password.lower():
+        a += 1
+    for i in password:
+        if i.isdigit():
+            a += 1
+            break
+    return True if a == 4 else False:
+    
 # считываем данные
 txt = input()
 

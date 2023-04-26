@@ -1,21 +1,17 @@
 #!/usr/bin/python3
 '''
-Напишите функцию get_next_prime(num), которая принимает в качестве аргумента натуральное число num и возвращает первое простое число большее числа num.
+Напишите функцию get_next_prime(num), которая принимает в качестве аргумента натуральное число num и возвращает первое 
+простое число большее числа num.
 Примечание 1. Используйте функцию is_prime() из предыдущей задачи.
 '''
 
 def is_prime(a):
-    i = 1
-    array = [] 
-    while a > i:
+    i = 2
+    while i < a:
         if a % i == 0:
-            array.append(i)
+            return False
         i += 1
-    array.append(a)
-    if len(array) ==  2:
-        return True
-    else:
-        return False
+    return True
     
 def get_next_prime(num):
     num += 1

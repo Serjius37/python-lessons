@@ -7,9 +7,7 @@
 Примечание. Последний элемент списка состоит из 26 символов z.
 '''
 
-array = ['w'] * 26
-a = 0
+array = []
 for i in range (97,123):
-    array[a] = chr(i)*(a+1)
-    a +=1
+    array.append(chr(i)*(i+1))
 print(array)

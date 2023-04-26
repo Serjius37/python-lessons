@@ -12,8 +12,10 @@ s =input()
 а = s.split('.')
 с = 0
 for v in а:
-    if 0 > int(v) or  int(v)>255 :
+    if 0 > int(v) or int(v)>255 :
         с += 1
+        break
+        
         
 if с==0 :
      print('ДА')

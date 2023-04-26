@@ -7,12 +7,8 @@
 Программа должна вывести список в соответствии с условием задачи.
 Примечание. Используйте оператор del.
 '''
-
-a = int(input())
-i = 0
-array = ['w'] * a
-while a != i:
-    array[i] = int(input())
-    i += 1
-del array[1::2]    
+array = [int(input()) for _ in range(int(input()))]
+del array[::2]      
 print(array)
+
+

@@ -14,3 +14,13 @@ txt = input()
 
 # вызываем функцию
 print(*convert_to_python_case(txt), sep = '')
+
+def convert_to_python_case(text):
+    return ''.join(['_' + i if i.isupper() else i for i in text]).lstrip('_').lower()
+
+
+# считываем данные
+txt = input()
+
+# вызываем функцию
+print(convert_to_python_case(txt))

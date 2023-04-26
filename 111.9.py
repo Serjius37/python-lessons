@@ -9,6 +9,7 @@
 
 n = int(input())
 a = list(range(97,97 + n))
+print(a)
 a = map(chr, a)
 a = list(a)
 print(a)

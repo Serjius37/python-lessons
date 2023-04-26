@@ -7,7 +7,5 @@
 Программа должна вывести текст в соответствии с условием задачи.
 '''
 
-s = input()
-s = s.split()
-for i in range(len(s)):
-    print(s[i][0], end = '.')
+for i in input().split():
+    print(i[0], end = '.')

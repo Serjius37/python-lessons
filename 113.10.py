@@ -8,11 +8,8 @@
 '''
 
 a = int(input())
-i = 2
-array = [1] 
-while a != i:
-    if a % i == 0:
+for i in range(2, a / 2 + 1):
+    if a %i == 0:
         array.append(i)
-    i += 1
 array.append(a)        
 print(array)

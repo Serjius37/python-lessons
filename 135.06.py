@@ -7,11 +7,13 @@
 
 # объявление функции
 def is_one_away(word1, word2):
+    if len(word1) != len(word2): 
+        return False
     count = 0
     for i in range(len(word1)):
         if word1[i] in word2[i]:
             count +=1 
-    if len(word1) - 1 == count:
+    if len(word1) - 1 == count: #and len(word1) == len(word2):
         return True
     else:
         return False

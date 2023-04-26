@@ -19,4 +19,4 @@ if 5 and 17 in numbers:
     print('YES')
 else :
     print('NO')
-print(numbers[1:len(numbers)-1])
+print(numbers[1:-1])

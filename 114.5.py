@@ -10,10 +10,10 @@
 
 a = int(input())
 i = 0
-array = ['']
+array = []
 while a != i:
     d = input()
     if d not in array:
         array.append(d)
     i += 1
-print(*array[1:], sep = '\n')
+print(*array, sep = '\n')

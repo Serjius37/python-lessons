@@ -7,13 +7,6 @@
 Программа должна вывести список, состоящий из сумм соседних чисел.
 '''
 
-a = int(input())
-i = y = 0
+array = [int(input()) for i in range (int(input()))]
+print(*[array[i] + array[i + 1] for i in range(len(array)- 1)])
 
-array = ['w'] * a
-while a != i:
-    d = int(input())
-    array[i] = y + d
-    y = d
-    i += 1
-print(array[1:])

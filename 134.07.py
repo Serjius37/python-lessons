@@ -15,6 +15,8 @@ def get_days(n):
     else :
         return 30
 
+#month = [0,31,28,31,30,31,30,31,31,30,31,30,31]
+#return month[n]
 # считываем данные
 n = int(input())
 

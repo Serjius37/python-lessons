@@ -19,5 +19,5 @@ while a != i:
     y = (d + 1)**2
     array[i] = y
     i += 1
-print('')    
+print()    
 print(*array, sep = '\n')

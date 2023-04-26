@@ -9,8 +9,12 @@
 
 a = int(input())
 i = 0
-array = ['w'] * a
+l = ['w'] * a
 while a != i:
-    array[i] = input()
+    l[i] = input()
     i += 1
-print(array)
+print(l)
+l = [] 
+for _ in range(int(input())):
+    l.append(input())
+print(l)

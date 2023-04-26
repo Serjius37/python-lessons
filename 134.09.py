@@ -6,14 +6,13 @@
 
 # объявление функции
 def get_factors(a):
+    count = 1
     i = 1
-    array = [] 
     while a > i:
         if a % i == 0:
-            array.append(i)
-        i += 1
-    array.append(a)        
-    return len(array)
+            count += 1
+        i += 1      
+    return count
 
 # считываем данные
 n = int(input())

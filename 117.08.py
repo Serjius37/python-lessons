@@ -9,7 +9,4 @@
 Примечание 2. Используйте метод split().
 '''
 
-n = input()
-n = n.split()
-c = [int(i) ** 3 for i in n]
-print(*c, sep = ' ')
+print(*[int(i) ** 3 for i in input().split()], sep = ' ')

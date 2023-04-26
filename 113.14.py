@@ -8,11 +8,4 @@
 Примечание. В результирующем списке могут содержаться одинаковые символы.
 '''
 
-a = int(input())
-i = 0
-array = ['']
-while a != i:
-    s = input()
-    array.extend(s)
-    i += 1
-print(array[1:])
+print( [.extend(input()) for _ in range (int(input()))])

@@ -8,6 +8,4 @@
 Примечание. Программу можно написать в одну строку кода.
 '''
 
-n = input()
-n = n.split()
-print(*n, sep = '\n')
+print(*input().split(), sep = '\n')

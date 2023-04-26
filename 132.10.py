@@ -6,10 +6,10 @@
 # объявление функции
 def print_digit_sum(n):
     c = 0
-    while n > 9:
+    while n:
         c += n % 10
         n = n // 10
-    print(c + n)    
+    print(c)    
 # считываем данные
 n = int(input())
 

@@ -8,17 +8,11 @@
 Примечание. Если некоторые строки слишком короткие, и в них нет символа с заданным номером, то такие строки при выводе нужно игнорировать.
 '''
 
-a = int(input())
-i = 0
-sc = ''
-array = ['w'] * a
-while a != i:
-    array[i] = input()
-    i += 1
-q = int(input())
 
-for k in range(a) : 
-    if len(array[k]) >= q:
-        s = array[k][q - 1]
-        sc += s
+sc = ''
+array = [int(input()) for _ in range (int(input()))]
+q = int(input())
+for k in array: 
+    if len(k) >= q:
+        sc += k[q - 1]
 print(sc)

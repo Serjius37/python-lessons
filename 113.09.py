@@ -7,12 +7,7 @@
 Программа должна вывести список, состоящий из кубов указанных чисел.
 '''
 
-a = int(input())
-i = 0
-array = ['w'] * a
-while a != i:
-    d = int(input())
-    y = d ** 3
-    array[i] = y
-    i += 1
+array = []
+for i in range (int(input())):
+    array.append(int(input()) ** 3)
 print(array)
