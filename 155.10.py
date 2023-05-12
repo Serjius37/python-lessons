@@ -34,7 +34,7 @@ def is_magic2(s):
             if v[j][i] in b:
                 v[j][i] = b[b.find(v[j][i]) - len(w)]                 
 s = input() 
-if(fl)
+if(fl) 
     is_magic1(s)
 else
      is_magic(s)            

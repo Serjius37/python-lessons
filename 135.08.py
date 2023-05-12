@@ -11,36 +11,16 @@ BEEGEEK наконец открыл свой банк в котором исп�
 Напишите функцию is_valid_password(password), которая принимает в качестве аргумента строковое значение пароля password и возвращает значение True если пароль является действительным паролем BEEGEEK банка и False в противном случае.
 '''
 
-# объявление функции
-def is_valid_password(password):
-    count = 0
-    password = password.split(':')
-    if len(password) != 3:
+def prime(num):
+    return len([i for i in range(1, num+1) if num % i == 0]) == 2
+def palindrome(text):
+    return text == text[::-1]
+def valid_password(password):
+    s = password.split(':')
+    if len(s) != 3:
         return False
-    else:
-        if password[0] in password[0][::-1]:
-            count += 1 
-        password[1] = ''.join(password[1])
-        a = int(password[1])
-        i = 1
-        array = [] 
-        while a > i:
-            if a % i == 0:
-                array.append(i)
-            i += 1
-        array.append(a)
-        if len(array) ==  2: 
-            count += 1
-        password[2] = ''.join(password[2])
-        b = int(password[2])  
-        if b % 2 == 0:
-            count += 1
-        if count == 3:
-            return True
-        else: 
-            return False
-# считываем данные
+    return all([palindrome(s[0]), prime(int(s[1])), int(s[2]) % 2 == 0])
+    
 psw = input()
 
-# вызываем функцию
-print(is_valid_password(psw))
+print(valid_password(psw))
