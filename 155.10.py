@@ -26,7 +26,7 @@ if(fl)
     q = 1
 else
     q = -1
-is_magic(s)            
+0is_magic(s)            
 for l in v:
     for y in l:
         print(y, end = '')
